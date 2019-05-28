@@ -1,0 +1,18 @@
+dev_num=1:1
+kernel_img=zImage
+ramdisk_img=ramdisk.gz
+devicetree_img=mic7001.dtb
+ramdisk_load_address=0x83800000
+devicetree_load_address=0x83000000
+kernel_load_address=0x80800000
+ipaddr=192.168.1.100
+netmask=255.255.255.0
+bootargs_usb=console=ttymxc0,115200 initrd=0x83800000,64M root=/dev/ram0  rw quiet boot_flag=usb
+bootargs=console=ttymxc0,115200 initrd=0x83800000,32M root=/dev/ram0  rw quiet boot_flag=ramdisk
+load_image_ram=fatload mmc ${dev_num} ${kernel_load_address} ${kernel_img} && fatload mmc ${dev_num} ${devicetree_load_address} ${devicetree_img} && fatload mmc ${dev_num} ${ramdisk_load_address} ${ramdisk_img}
+load_image_usb0=fatload usb 0 ${kernel_load_address} ${kernel_img} && fatload usb 0 ${devicetree_load_address} ${devicetree_img} && fatload usb 0 ${ramdisk_load_address} ${ramdisk_img}
+load_image_usb00=fatload usb 0:0 ${kernel_load_address} ${kernel_img} && fatload usb 0:0 ${devicetree_load_address} ${devicetree_img} && fatload usb 0:0 ${ramdisk_load_address} ${ramdisk_img}
+uenvcmd_ram=echo Copying Linux from Emmc to RAM... && run load_image_ram && bootz ${kernel_load_address} - ${devicetree_load_address}
+usbcmd_ram=echo Copying Linux from Usb to RAM...; if run load_image_usb0; then echo load image from usb 0; else echo load image from usb 00 && run load_image_usb00;fi; setenv bootargs ${bootargs_usb}; bootz ${kernel_load_address} - ${devicetree_load_address}
+uenvcmd=env run uenvcmd_ram
+usbcmd=env run usbcmd_ram
