@@ -1,0 +1,67 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+DOORSWITCH::PORTBbits.RB2	D:\m26_project\PIC18F\Inc\main.h	8;"	d	line:8
+Delay_s	D:\m26_project\PIC18F\Inc\user_delays.h	10;"	p	line:10	signature:(unsigned int Count)
+Delay_s	D:\m26_project\PIC18F\Src\user_delays.c	7;"	f	line:7	signature:(unsigned int Count)
+InterruptHandlerHigh	D:\m26_project\PIC18F\Src\main.c	174;"	f	line:174	signature:(void)
+InterruptHandlerHigh	D:\m26_project\PIC18F\Src\main.c	22;"	p	line:22	file:	signature:(void)
+InterruptHandlerLow	D:\m26_project\PIC18F\Src\main.c	204;"	f	line:204	signature:(void)
+InterruptHandlerLow	D:\m26_project\PIC18F\Src\main.c	23;"	p	line:23	file:	signature:(void)
+InterruptVectorHigh	D:\m26_project\PIC18F\Src\main.c	166;"	f	line:166	signature:(void)
+InterruptVectorLow	D:\m26_project\PIC18F\Src\main.c	195;"	f	line:195	signature:(void)
+M26_CheckCmd	D:\m26_project\PIC18F\Inc\m26.h	31;"	p	line:31	signature:(const rom char *str)
+M26_CheckCmd	D:\m26_project\PIC18F\Inc\main.h	23;"	p	line:23	signature:(const rom char *str)
+M26_CheckCmd	D:\m26_project\PIC18F\Src\m26.c	75;"	f	line:75	signature:(const rom char *str)
+M26_ExtractData	D:\m26_project\PIC18F\Inc\m26.h	37;"	p	line:37	signature:(void)
+M26_ExtractData	D:\m26_project\PIC18F\Inc\main.h	24;"	p	line:24	signature:(void)
+M26_ExtractData	D:\m26_project\PIC18F\Src\m26.c	91;"	f	line:91	signature:(void)
+M26_Init	D:\m26_project\PIC18F\Inc\m26.h	42;"	p	line:42	signature:(void)
+M26_Init	D:\m26_project\PIC18F\Inc\main.h	21;"	p	line:21	signature:(void)
+M26_Init	D:\m26_project\PIC18F\Src\m26.c	106;"	f	line:106	signature:(void)
+M26_OK::0	D:\m26_project\PIC18F\Inc\main.h	15;"	d	line:15
+M26_Poweron	D:\m26_project\PIC18F\Inc\main.h	18;"	p	line:18	signature:(void)
+M26_Poweron	D:\m26_project\PIC18F\Inc\main.h	22;"	p	line:22	signature:(void)
+M26_Poweron	D:\m26_project\PIC18F\Src\main.c	71;"	f	line:71	signature:(void)
+M26_SendByte	D:\m26_project\PIC18F\Inc\m26.h	13;"	p	line:13	signature:(unsigned char cmd, const rom char *ack, unsigned int waittime)
+M26_SendByte	D:\m26_project\PIC18F\Src\m26.c	45;"	f	line:45	signature:( unsigned char cmd, const rom char *ack, unsigned int waittime)
+M26_SendCmd	D:\m26_project\PIC18F\Inc\m26.h	23;"	p	line:23	signature:(const rom char *cmd, const rom char *ack, unsigned int waittime)
+M26_SendCmd	D:\m26_project\PIC18F\Src\m26.c	12;"	f	line:12	signature:(const rom char *cmd, const rom char *ack, unsigned int waittime)
+M26_SendString	D:\m26_project\PIC18F\Inc\m26.h	47;"	p	line:47	signature:(char *s)
+M26_SendString	D:\m26_project\PIC18F\Inc\main.h	25;"	p	line:25	signature:(char *s)
+M26_SendString	D:\m26_project\PIC18F\Src\m26.c	160;"	f	line:160	signature:(char *s)
+OPENDOOR::LATCbits.LATC0	D:\m26_project\PIC18F\Inc\main.h	6;"	d	line:6
+PWRKEY::LATAbits.LATA3	D:\m26_project\PIC18F\Inc\main.h	7;"	d	line:7
+PWRKEY_PullHight::PWRKEY=0	D:\m26_project\PIC18F\Inc\main.h	13;"	d	line:13
+PWRKEY_PullLow::PWRKEY=1	D:\m26_project\PIC18F\Inc\main.h	14;"	d	line:14
+RxCount	D:\m26_project\PIC18F\Src\main.c	17;"	v	line:17
+SendAlarmNum	D:\m26_project\PIC18F\Inc\main.h	20;"	p	line:20	signature:(unsigned char num, const rom char *ack, unsigned int waittime)
+SendAlarmNum	D:\m26_project\PIC18F\Src\main.c	102;"	f	line:102	signature:(unsigned char num, const rom char *ack, unsigned int waittime)
+TxBuf	D:\m26_project\PIC18F\Src\main.c	15;"	v	line:15
+USARTRcvFlag	D:\m26_project\PIC18F\Src\main.c	19;"	v	line:19
+USARTRcvTimeout	D:\m26_project\PIC18F\Inc\main.h	19;"	p	line:19	signature:(void)
+USARTRcvTimeout	D:\m26_project\PIC18F\Src\main.c	88;"	f	line:88	signature:(void)
+USARTRcvTimeoutCnt	D:\m26_project\PIC18F\Src\main.c	18;"	v	line:18
+USARTRxBuf	D:\m26_project\PIC18F\Src\main.c	13;"	v	line:13
+USARTTxBuf	D:\m26_project\PIC18F\Src\main.c	14;"	v	line:14
+USART_MAX_RECV_LEN::64	D:\m26_project\PIC18F\Inc\main.h	10;"	d	line:10
+USART_MAX_SEND_LEN::64	D:\m26_project\PIC18F\Inc\main.h	11;"	d	line:11
+USART_RCV_TIMEOUT::10	D:\m26_project\PIC18F\Inc\main.h	12;"	d	line:12
+__M26_H	D:\m26_project\PIC18F\Inc\m26.h	2;"	d	line:2
+__MAIN_H	D:\m26_project\PIC18F\Inc\main.h	2;"	d	line:2
+__USER_DELAYS_H	D:\m26_project\PIC18F\Inc\user_delays.h	2;"	d	line:2
+i	D:\m26_project\PIC18F\Src\user_delays.c	9;"	l	line:9
+init	D:\m26_project\PIC18F\Inc\main.h	17;"	p	line:17	signature:(void)
+init	D:\m26_project\PIC18F\Src\main.c	25;"	f	line:25	signature:(void)
+main	D:\m26_project\PIC18F\Src\main.c	127;"	f	line:127	signature:(void)
+open_flag	D:\m26_project\PIC18F\Src\main.c	20;"	v	line:20
+rcv	D:\m26_project\PIC18F\Src\m26.c	93;"	l	line:93
+res	D:\m26_project\PIC18F\Src\m26.c	14;"	l	line:14
+res	D:\m26_project\PIC18F\Src\m26.c	47;"	l	line:47
+res	D:\m26_project\PIC18F\Src\main.c	104;"	l	line:104
+strx	D:\m26_project\PIC18F\Src\m26.c	77;"	l	line:77

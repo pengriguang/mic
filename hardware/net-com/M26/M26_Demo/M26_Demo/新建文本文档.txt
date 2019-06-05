@@ -1,0 +1,1 @@
+	sprintf(SendCmd,%c,0x1A);//将0x1A转换成字符串存储与SendCmd数组中，0x1A:Ctrl+Z,表示发送数据指令
