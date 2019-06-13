@@ -8,6 +8,8 @@
 	#opencv configuration
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/opencv_lib:/usr/lib/opencv_lib/3rdparty
 
+	export TZ=UTC-08:00
+
 	#mysql database configuration
 	ln -s /mnt/mmcblk1p2/usr/config/my.cnf /etc/my.cnf
 	ln -s /mnt/mmcblk1p2/usr/config/mysql.server /etc/init.d/mysqld
@@ -30,8 +32,8 @@
 	#load config, update ip address, wifi name and wifi passwd here
 	sh /mnt/mmcblk1p2/usr/config/loadconfig.sh
 
-	cd /userapp/                                                           
-    ./mic7000d &
+	cd /userapp/                                                             
+    	./mic7000d &
 	sleep 1
 
 	#codesys configuration
@@ -77,7 +79,7 @@
 	#canconfig can1 bitrate 250000
 	#canconfig can1 ctrlmode loopback off
 	#canconfig can1 start
-	
+
 	#wifi used for station
 	#wpa_supplicant -d -Dwext -iwlan0 -B -c /etc/wpa_supplicant/wpa_supplicant.conf
 	#ifconfig wlan0 192.168.43.10 up
