@@ -1,0 +1,1618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeviceDescription xmlns="http://www.3s-software.com/schemas/DeviceDescription-1.0.xsd" xmlns:ts="http://www.3s-software.com/schemas/TargetSettings-0.1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Strings namespace="local">
+    <Language lang="en">
+      <String identifier="ModelName">IoDrvMIC7001</String>
+      <String identifier="DeviceDescription"></String>
+      <String identifier="VendorName">Cyber-MI</String>
+      <String identifier="typename">IoDrv of MIC7001</String>
+      <String identifier="typedescription">Description of the Device</String>
+    </Language>
+  </Strings>
+  <Device hideInCatalogue="false">
+    <DeviceIdentification>
+      <Type>40100</Type>
+      <Id>1001 0008</Id>
+      <Version>3.5.10.1</Version>
+    </DeviceIdentification>
+    <DeviceInfo>
+      <Name name="local:ModelName">IoDrvMIC7001</Name>
+      <Description name="local:DeviceDescription">Controller with 58Pins</Description>
+      <Vendor name="local:VendorName">AIM</Vendor>
+      <OrderNumber>???</OrderNumber>
+    </DeviceInfo>
+    <Connector moduleType="257" interface="Common.PCI" role="child" explicit="false" connectorId="1" hostpath="-1">
+      <InterfaceName name="local:PCI">PCI-Bus</InterfaceName>
+      <Slot count="1" allowEmpty="false"></Slot>
+    </Connector>
+    <Connector moduleType="40100" interface="Cyber-MI:Internal" role="parent" explicit="false" connectorId="2" hostpath="1">
+      <InterfaceName name="local:DP">Internal</InterfaceName>
+      <Var max="125"></Var>
+      <DriverInfo needsBusCycle="true"></DriverInfo>
+      <HostParameterSet>
+       <ParameterSection>
+         <Name name="local:AI">AI</Name>
+	    <Parameter ParameterId="1000" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in0">Ai00@C14</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1001" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in1">Ai01@C15</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1002" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in2">Ai02@C16</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1003" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in3">Ai03@C28</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1004" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in4">Ai04@C17</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1005" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in5">Ai05@C29</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1006" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in6">Ai06@C30</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1007" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in7">Ai07@C31</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1008" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in8">Ai08@C18</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1009" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in9">Ai09@D18</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1010" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in10">Ai10@D22</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1011" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in11">Ai11@D21</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1012" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in12">Ai12@D20</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1013" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in13">Ai13@D31</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1014" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in14">Ai14@D19</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1015" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in15">Ai15@D30</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1016" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in16">Ai16@D29</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1017" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in17">Ai17@D28</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1018" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in18">Ai18-Do00@C25</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1019" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in19">Ai19-Do01@C24</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1020" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in20">Ai20-Do02@C13</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1021" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in21">Ai21-Do03@C01</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1022" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in22">Ai22-Do04@C03</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1023" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in23">Ai23-Do05@C04</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1024" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in24">Ai24-Do06@C05</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1025" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in25">Ai25-Do07@C06</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1026" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in26">Ai26-Do08@C08</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1027" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in27">Ai27-Do09@C09</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1028" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in28">Ai28-Do10@C10</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1029" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in29">Ai29-Do11@C11</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1030" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in30">Ai30-Do12@D34</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1031" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in31">Ai31-Do13@D35</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1032" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in32">Ai32-Do14@D23</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1033" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in33">Ai33-Do15@D12</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1034" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in34">Ai34-Do16@D10</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1035" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in35">Ai35-Do17@D09</Name>
+          </Parameter>
+
+
+
+        <Parameter ParameterId="1036" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in36">Ai36-Do18@D08</Name>
+          </Parameter>
+
+
+
+          
+        <Parameter ParameterId="1037" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in37">Ai37-Do19@D07</Name>
+          </Parameter>
+
+
+
+        <Parameter ParameterId="1038" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in38">Ai38-Do20@D05</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1039" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in39">Ai39-Do21@D04</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1040" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in40">Ai40-Do22@D03</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1041" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in41">Ai41-Do23@D02</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1042" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in42">Ai42-Ao00@C19</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1043" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in43">Ai43-Ao01@D17</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1044" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in44">Ai44-Pi02</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1045" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in45">Ai45_out5v</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1046" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in46">Ai46_VC</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1047" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in47">Ai47_V5V</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1048" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in48">Ai48_VL</Name>
+          </Parameter>
+
+
+
+        <Parameter ParameterId="1049" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in49">Ai49_VR</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1050" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in50">Ai50_HBerr12</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1051" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in51">Ai51_HBerr34</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1052" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in52">Ai52_pwm-i0</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1053" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in53">Ai53_pwm-i1</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1054" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in54">Ai54_pwm-i2</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1055" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in55">Ai55_pwm-i3</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1056" type="std:DINT">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in56">Ai56_CPU-T</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1057" type="std:DINT">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in57">Ai57_G-x</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1058" type="std:DINT">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in58">Ai58_G-y</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1059" type="std:DINT">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in59">Ai59_G-z</Name>
+          </Parameter>
+
+
+        <Parameter ParameterId="1060" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in60">Ai60_PI-cntr0</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1061" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in61">Ai61_PI-cntr1</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1062" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in62">Ai62_PI-cntr2</Name>
+          </Parameter>
+          
+        <Parameter ParameterId="1063" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in63">Ai63_PI-cntr3</Name>
+          </Parameter>
+
+		</ParameterSection>
+
+		<ParameterSection>
+		<Name name="local:DI">DI</Name>
+	    <Parameter ParameterId="1064" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in64">Di00-Ai00@C14</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1065" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in65">Di01-Ai01@C15</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1066" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in66">Di02-Ai02@C16</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1067" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in67">Di03-Ai03@C28</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1068" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in68">Di04-Ai04@C29</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1069" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in69">Di05-Ai05@C29</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1070" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in70">Di06-Ai06@C30</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1071" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in71">Di07</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1072" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in72">Di08</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1073" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in73">Di09</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1074" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in74">Di10</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1075" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in75">Di11</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1076" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in76">Di12</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1077" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in77">Di13</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1078" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in78">Di14</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1079" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in79">Di15</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1080" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in80">Di16</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1081" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in81">Di17</Name>
+          </Parameter>
+
+
+          
+	    <Parameter ParameterId="1082" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in82">Di18</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1083" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in83">Di19</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1084" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in84">Di20</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1085" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in85">Di21</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1086" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in86">Di22</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1087" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in87">Di23</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1088" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in88">Di24</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1089" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in89">Di25</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1090" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in90">Di26</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1091" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in91">Di27</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1092" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in92">Di28</Name>
+          </Parameter>
+         
+
+	    <Parameter ParameterId="1093" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in93">Di29</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1094" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in94">Di30</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1095" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in95">Di31</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1096" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in96">Di32</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1097" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in97">Di33</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1098" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in98">Di34</Name>
+          </Parameter>
+
+
+
+	    <Parameter ParameterId="1099" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in99">Di35</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1100" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in100">Di36</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1101" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in101">Di37</Name>
+          </Parameter>
+	    <Parameter ParameterId="1102" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in102">Di38</Name>
+          </Parameter>
+	    <Parameter ParameterId="1103" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in103">Di39</Name>
+          </Parameter>
+	    <Parameter ParameterId="1104" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in104">Di40</Name>
+          </Parameter>
+	    <Parameter ParameterId="1105" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in105">Di41</Name>
+          </Parameter>
+	    <Parameter ParameterId="1106" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in106">Di42</Name>
+          </Parameter>
+	    <Parameter ParameterId="1107" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in107">Di43</Name>
+          </Parameter>
+	    <Parameter ParameterId="1108" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in108">Di44</Name>
+          </Parameter>
+	    <Parameter ParameterId="1109" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in109">Di45</Name>
+          </Parameter>
+	    <Parameter ParameterId="1110" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in110">Di46</Name>
+          </Parameter>
+
+        <Parameter ParameterId="1111" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in111">Di47</Name>
+          </Parameter>
+	    <Parameter ParameterId="1112" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in112">Di48</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1113" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in113">Di49</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1114" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in114">Di50</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1115" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in115">Di51</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1116" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in116">Di52</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1117" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in117">Di53</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1118" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in118">Di54</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1119" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in119">Di55</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1120" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in120">Di56</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1121" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in121">Di57</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1122" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in122">Di58</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1123" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in123">Di59</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="1124" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in124">Di60</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1125" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in125">Di61</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1126" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in126">Di62</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="1127" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in127">Di63</Name>
+          </Parameter>
+		</ParameterSection>
+		
+ 		<ParameterSection>
+		<Name name="local:PI">PI</Name>
+	    <Parameter ParameterId="1128" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in128">Pi0</Name>
+          </Parameter>
+
+          
+	    <Parameter ParameterId="1129" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in129">Pi1</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1130" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in130">Pi2</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="1131" type="std:DWORD">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:in131">Pi3</Name>
+          </Parameter>
+
+        </ParameterSection>
+
+ 		<ParameterSection>
+		<Name name="local:DO">DO</Name>
+	    <Parameter ParameterId="2000" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out00">Do00</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2001" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out01">Do01</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2002" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out02">Do02</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2003" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out03">Do03</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2004" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out04">Do04</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2005" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out05">Do05</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2006" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out06">Do06</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2007" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out07">Do07</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2008" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out08">Do08</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2009" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out09">Do09</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2010" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out10">Do10</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2011" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out11">Do11</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2012" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out12">Do12</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2013" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out13">Do13</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2014" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out14">Do14</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2015" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out15">Do15</Name>
+          </Parameter>
+
+
+
+	    <Parameter ParameterId="2016" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out16">Do16</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2017" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out17">Do17</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2018" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out18">Do18</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2019" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out19">Do19</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2020" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out20">Do20</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2021" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out21">Do21</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2022" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out22">Do22</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2023" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out23">Do23</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2024" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out24">Do24</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2025" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out25">Do25</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2026" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out26">Do26</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2027" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out27">Do27</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2028" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out28">Do28</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2029" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out29">Do29</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2030" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out30">Do30</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2031" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out31">Do31</Name>
+          </Parameter>
+		</ParameterSection>
+
+ 		<ParameterSection>
+		<Name name="local:PWM">PWM</Name>          
+	    <Parameter ParameterId="2032" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out32">PWM00</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2033" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out33">PWM01</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2034" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out34">PWM02</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2035" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out35">PWM03</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2036" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out36">PWM04</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2037" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out37">PWM05</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2038" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out38">PWM06</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2039" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out39">PWM07</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2040" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out40">PWM08</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2041" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out41">PWM09</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2042" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out42">PWM10</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2043" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out43">PWM11</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2044" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out44">PWM12</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2045" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out45">PWM13</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2046" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out46">PWM14</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2047" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out47">PWM15</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2048" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out48">PWM16</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2049" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out49">PWM17</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2050" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out50">PWM18</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2051" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out51">PWM19</Name>
+          </Parameter>
+
+
+
+	    <Parameter ParameterId="2052" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out52">PWM20</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2053" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out53">PWM21</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2054" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out54">PWM22</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2055" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out55">PWM23</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2056" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out56">PWM24</Name>
+          </Parameter>
+
+
+	    <Parameter ParameterId="2057" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out57">PWM25</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2058" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out58">PWM26</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2059" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out59">PWM27</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2060" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out60">PWM28</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2061" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out61">PWM29</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2062" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out62">PWM30</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2063" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out63">PWM31</Name>
+          </Parameter>
+		</ParameterSection>
+
+ 		<ParameterSection>
+		<Name name="local:PWM-I">PWM-I</Name>   
+	    <Parameter ParameterId="2064" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out64">PWM_I_0</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2065" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out65">PWM_I_1</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2066" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out66">PWM_I_2</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2067" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out67">PWM_I_3</Name>
+          </Parameter>
+        </ParameterSection>
+
+ 		<ParameterSection>
+		<Name name="local:H-bridge">H-bridge</Name> 
+	    <Parameter ParameterId="2068" type="std:DINT">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out68">H-b0</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2069" type="std:DINT">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out69">H-b1</Name>
+          </Parameter>
+       </ParameterSection>
+
+ 		<ParameterSection>
+		<Name name="local:AO">AO</Name> 
+	    <Parameter ParameterId="2070" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out70">Ao0</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2071" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out71">Ao1</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2072" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out72">AoR_Pi01</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2073" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out73">AoR_Pi23</Name>
+          </Parameter>
+       </ParameterSection>
+
+ 		<ParameterSection>
+		<Name name="local:LED">LED</Name>           
+	    <Parameter ParameterId="2074" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out74">LED_run</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2075" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out75">LED_err</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2076" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out76">LED_usr</Name>
+          </Parameter>
+
+ 		</ParameterSection>
+
+ 		<ParameterSection>
+ 		
+		<Name name="local:Ctrl">Ctrl</Name> 
+	    <Parameter ParameterId="2077" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out77">ctrl_ma1</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="2078" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out78">ctrl_ma2</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2079" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out79">ctrl_hl1</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2080" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out80">ctrl_hl2</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="2081" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out81">ctrl_hl3</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2082" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out82">ctrl_hl4</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2083" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out83">ctrl_hl5</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="2084" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out84">ctrl_hl6</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2085" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out85">ctrl_hl7</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2086" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out86">ctrl_hl8</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="2087" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out87">ctrl_hl9</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2088" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>1</Default>
+          <Name name="local:out88">ctrl_hl10</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2089" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out89">ctrl_hv1</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2090" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out90">ctrl_hv2</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2091" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out91">ctrl_hv3</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2092" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out92">ctrl_hv4</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="2093" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out93">ctrl_hv5</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2094" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out94">ctrl_hv6</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2095" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out95">ctrl_ai_raw</Name>
+          </Parameter>
+	    <Parameter ParameterId="2096" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out96">ctrl_adjust</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2097" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out97">ctrl_adj0</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2098" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out98">ctrl_adj1</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="2099" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out99">ctrl_adj2</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2100" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out100">ctrl_adj3</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2101" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out101">ctrl_adj4</Name>
+          </Parameter>
+	    <Parameter ParameterId="2102" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out102">reserved</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2103" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out103">reserved</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2104" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out104">reserved</Name>
+          </Parameter>
+          
+	    <Parameter ParameterId="2105" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out105">reserved</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2106" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out106">reserved</Name>
+          </Parameter>
+
+	    <Parameter ParameterId="2107" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out107">reserved</Name>
+          </Parameter>
+          
+
+	    <Parameter ParameterId="2108" type="std:DWORD">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:out108">reserved</Name>
+          </Parameter>
+         
+ 		</ParameterSection>
+ 		
+        <Parameter ParameterId="393218" type="std:STRING">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="write" onlineaccess="read" />
+          <Default>'长沙赛搏机器智能有限公司'</Default>
+          <Name name="local:Id393218">Vendor</Name>
+          <Description name="local:Id393218.Desc">Vendor of the device</Description>
+        </Parameter>
+        <Parameter ParameterId="393219" type="std:STRING">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="write" onlineaccess="read" />
+          <Default>'MIC7001'</Default>
+          <Name name="local:Id393219">ModelName</Name>
+          <Description name="local:Id393219.Desc">Model name of the device</Description>
+        </Parameter>
+       
+      </HostParameterSet>
+    </Connector>
+  </Device>
+</DeviceDescription>
