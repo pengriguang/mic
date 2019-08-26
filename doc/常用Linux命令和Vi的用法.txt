@@ -1,0 +1,63 @@
+一、常用Linux命令
+1. 显示当前目录下文件和目录
+ls
+
+2. 由第一行开始显示档案内容  
+cat
+
+3. 增加文件filename读写执行权限
+chmod +R filename  增加文件读写执行权限,+R 可读,+W 可写,+X 可执行
+
+4. 新建目录 dir1
+mkdir  dir1
+
+5. 显示当前路径
+pwd
+
+6. 进入目录 /usr/local/
+cd /usr/local/
+
+7. 返回到上一级目录
+cd ..
+
+8. 将文件名改为 filenew1
+mv file1 filenew1 
+
+9. 将文件移动到目录 /home/haowen/下,相当于 window 剪切
+mv file1  /home/haowen/
+
+10. 将文件复制copy到目录 /home/haowen/下
+cp file1 /home/haowen/ 
+
+11. 删除文件
+rm -f file1
+
+12. 删除目录
+rm -rf dir1
+
+13. 杀死进程号为 2325的进程
+kill -9  2325
+
+14. 重启系统
+reboot
+
+
+二、 vi编辑器的使用说明
+例如要在/userapp目录下新增midConfig文件，或者修改原有的midConfig文件，可如下操作：
+1. cd  /userapp
+
+2. vi  midConfig
+
+3. 按键盘上的方向键，将闪动的光标移到行需要新增的行或者需要修改的行，然后按键盘上的小写字母a键，就可以对文件内容进行编辑
+
+4. 修改完成之后，然后按键盘最左上角的Esc键，退出编辑模式
+
+5. 退出编辑模式之后，再同时按shift 键和 : 键，会在屏幕的左下角出现“:”号
+
+6. 如果需要保存编辑的内容，则输入wq，再回车键；如果放弃修改的的内容，则输入q!    强制退出不保存；
+
+7. 运行sync命令，将内存数据同步到磁盘；
+
+8. cat midConfig   查看文件内容是否被修改
+
+
