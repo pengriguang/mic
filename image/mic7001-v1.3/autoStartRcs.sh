@@ -8,7 +8,7 @@
 	#opencv configuration
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/opencv_lib:/usr/lib/opencv_lib/3rdparty
 
-	export TZ=UTC-08:00
+	#export TZ=UTC-08:00
 
 	#mysql database configuration
 	ln -s /mnt/mmcblk1p2/usr/config/my.cnf /etc/my.cnf
@@ -81,6 +81,7 @@
 	#canconfig can1 start
 
 	#wifi used for station
+	#ln -s /mnt/mmcblk1p2/usr/config/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf
 	#wpa_supplicant -d -Dwext -iwlan0 -B -c /etc/wpa_supplicant/wpa_supplicant.conf
 	#ifconfig wlan0 192.168.43.10 up
 	#route add default gw 192.168.43.1
